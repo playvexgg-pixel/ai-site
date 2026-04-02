@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head><meta charset="UTF-8"><title>Tool AI</title></head>
+<body style="background:#0f172a;color:white;font-family:Arial;">
+<h1>Tool AI</h1>
+<select id="type">
+<option>Mesaj</option>
+<option>Idee</option>
+<option>Nume</option>
+</select>
+<input id="input" placeholder="Scrie ceva...">
+<button onclick="gen()">Generează</button>
+<p id="out"></p>
+<script>
+function gen(){
+ let t=document.getElementById('type').value;
+ let i=document.getElementById('input').value;
+ document.getElementById('out').innerText = t+": "+i+" (generat)";
+}
+</script>
+</body>
+</html>
+
+
+<!-- PREMIUM PAGE -->
+<!-- premium.html -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head><meta charset="UTF-8"><title>Premium</title></head>
+<body style="background:#0f172a;color:white;font-family:Arial;">
+<h1>Upgrade Premium</h1>
+<ul>
+<li>Generări nelimitate</li>
+<li>Viteză mai mare</li>
+<li>Fără reclame</li>
+</ul>
+<h2>5€/lună</h2>
+<button>Upgrade</button>
+</body>
+</html>
