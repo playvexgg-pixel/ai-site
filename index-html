@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -58,80 +57,5 @@ function copyText() {
 }
 </script>
 
-</body>
-</html>
-
-
-<!-- TOOL PAGE -->
-<!-- salvează ca tool.html -->
-
-<!DOCTYPE html>
-<html lang="ro">
-<head><meta charset="UTF-8"><title>Tool AI</title></head>
-<body style="background:#0f172a;color:white;font-family:Arial;">
-<h1>Tool AI</h1>
-<select id="type">
-<option>Mesaj</option>
-<option>Idee</option>
-<option>Nume</option>
-</select>
-<input id="input" placeholder="Scrie ceva...">
-<button onclick="gen()">Generează</button>
-<p id="out"></p>
-<script>
-function gen(){
- let t=document.getElementById('type').value;
- let i=document.getElementById('input').value;
- document.getElementById('out').innerText = t+": "+i+" (generat)";
-}
-</script>
-</body>
-</html>
-
-
-<!-- PREMIUM PAGE -->
-<!-- premium.html -->
-
-<!DOCTYPE html>
-<html lang="ro">
-<head><meta charset="UTF-8"><title>Premium</title></head>
-<body style="background:#0f172a;color:white;font-family:Arial;">
-<h1>Upgrade Premium</h1>
-<ul>
-<li>Generări nelimitate</li>
-<li>Viteză mai mare</li>
-<li>Fără reclame</li>
-</ul>
-<h2>5€/lună</h2>
-<button>Upgrade</button>
-</body>
-</html>
-
-
-<!-- BLOG PAGE -->
-<!-- blog.html -->
-
-<!DOCTYPE html>
-<html lang="ro">
-<head><meta charset="UTF-8"><title>Blog</title></head>
-<body style="background:#0f172a;color:white;font-family:Arial;">
-<h1>Blog AI</h1>
-<p>Articol: Cum să folosești AI</p>
-<p>Articol: Idei de business AI</p>
-</body>
-</html>
-
-
-<!-- EXEMPLU PAGINĂ SEO -->
-<!-- generator-teme.html -->
-
-<!DOCTYPE html>
-<html lang="ro">
-<head><meta charset="UTF-8"><title>Generator Teme</title></head>
-<body style="background:#0f172a;color:white;font-family:Arial;">
-<h1>Generator teme</h1>
-<p>Generează teme rapid</p>
-<input placeholder="Scrie tema">
-<button>Generează</button>
 </body>
 </html>
