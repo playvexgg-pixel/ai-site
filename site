@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Generator</title>
+  <style>
+    body { font-family: Arial; margin:0; background:#0f172a; color:white; }
+    header { padding:20px; display:flex; justify-content:space-between; }
+    a { color:white; text-decoration:none; margin:0 10px; }
+    .hero { text-align:center; padding:80px 20px; }
+    input, select, textarea { padding:10px; width:80%; margin:10px 0; }
+    button { padding:10px 20px; background:#22c55e; border:none; cursor:pointer; }
+    .container { padding:40px; max-width:800px; margin:auto; }
+    .box { background:#1e293b; padding:20px; border-radius:10px; margin-top:20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>AI Generator</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tool.html">Tool</a>
+    <a href="premium.html">Premium</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Generează conținut AI instant</h1>
+  <p>Creează texte, idei și mesaje în câteva secunde</p>
+  <input id="prompt" placeholder="Scrie aici...">
+  <br>
+  <button onclick="generate()">Generează</button>
+  <p>Exemple: "mesaj iubită", "idee business", "nume brand"</p>
+</section>
+
+<div class="container">
+  <div class="box">
+    <h2>Output</h2>
+    <p id="output">Rezultatul apare aici...</p>
+    <button onclick="copyText()">Copiază</button>
+  </div>
+</div>
+
+<script>
+function generate() {
+  let input = document.getElementById('prompt').value;
+  let output = "AI spune: " + input + " (exemplu generat)";
+  document.getElementById('output').innerText = output;
+}
+
+function copyText() {
+  let text = document.getElementById('output').innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copiat!");
+}
+</script>
+
+</body>
+</html>
+
+
+<!-- TOOL PAGE -->
+<!-- salvează ca tool.html -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head><meta charset="UTF-8"><title>Tool AI</title></head>
+<body style="background:#0f172a;color:white;font-family:Arial;">
+<h1>Tool AI</h1>
+<select id="type">
+<option>Mesaj</option>
+<option>Idee</option>
+<option>Nume</option>
+</select>
+<input id="input" placeholder="Scrie ceva...">
+<button onclick="gen()">Generează</button>
+<p id="out"></p>
+<script>
+function gen(){
+ let t=document.getElementById('type').value;
+ let i=document.getElementById('input').value;
+ document.getElementById('out').innerText = t+": "+i+" (generat)";
+}
+</script>
+</body>
+</html>
+
+
+<!-- PREMIUM PAGE -->
+<!-- premium.html -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head><meta charset="UTF-8"><title>Premium</title></head>
+<body style="background:#0f172a;color:white;font-family:Arial;">
+<h1>Upgrade Premium</h1>
+<ul>
+<li>Generări nelimitate</li>
+<li>Viteză mai mare</li>
+<li>Fără reclame</li>
+</ul>
+<h2>5€/lună</h2>
+<button>Upgrade</button>
+</body>
+</html>
+
+
+<!-- BLOG PAGE -->
+<!-- blog.html -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head><meta charset="UTF-8"><title>Blog</title></head>
+<body style="background:#0f172a;color:white;font-family:Arial;">
+<h1>Blog AI</h1>
+<p>Articol: Cum să folosești AI</p>
+<p>Articol: Idei de business AI</p>
+</body>
+</html>
+
+
+<!-- EXEMPLU PAGINĂ SEO -->
+<!-- generator-teme.html -->
+
+<!DOCTYPE html>
+<html lang="ro">
+<head><meta charset="UTF-8"><title>Generator Teme</title></head>
+<body style="background:#0f172a;color:white;font-family:Arial;">
+<h1>Generator teme</h1>
+<p>Generează teme rapid</p>
+<input placeholder="Scrie tema">
+<button>Generează</button>
+</body>
+</html>
